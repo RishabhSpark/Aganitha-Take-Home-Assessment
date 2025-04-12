@@ -36,9 +36,11 @@ bash
 poetry run get-papers-list --query "cancer immunotherapy" --file results.csv
 ```
 
-CLI Options
-Flag	Description
---query	PubMed search query (required)
---file	Output CSV file path
---debug	Enable debug logging
---help	Show help message
+## CLI Options
+
+| Flag              | Description                              |
+|-------------------|------------------------------------------|
+| `query`           | PubMed search query (required)           |
+| `--file` or `-f`  | Output CSV file path                     |
+| `--debug` or `-d` | Enable debug logging                     |
+| `--help` or `-d`  | Show help message                        |
