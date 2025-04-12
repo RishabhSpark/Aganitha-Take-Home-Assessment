@@ -1,0 +1,64 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+**/__pycache__/
+*.pdb
+*.cover
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python egg and distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# IDE and editor configuration files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Pytest cache
+.pytest_cache/
+
+# VSCode settings folder
+.vscode/
+
+# Coverage reports
+.coverage
+.coverage.*
+*.coverage
+
+# MyPy configuration
+.mypy_cache/
+
+# Python wheel files
+*.whl
