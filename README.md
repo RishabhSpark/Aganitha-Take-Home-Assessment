@@ -36,6 +36,14 @@ bash
 poetry run get-papers-list --query "cancer immunotherapy" --file results.csv
 ```
 
+## Roadmap
+- Basic CLI + PubMed search
+- XML metadata extraction
+- Heuristic affiliation classification
+<!-- - LLM-based fallback classifier -->
+- Caching of affiliation results
+
+
 CLI Options
 Flag	Description
 --query	PubMed search query (required)
