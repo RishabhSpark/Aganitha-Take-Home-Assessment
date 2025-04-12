@@ -6,7 +6,7 @@ academic_keywords: List[str] = [
     "University", "College", "Institute", "Academy", "School", 
     "Faculty", "Academician", "PhD", "Professor",
 ]
-
+    
 # Function to check if an affiliation is academic
 def is_academic(affiliation: str, academic_keywords: List[str]) -> bool:
     
