@@ -88,7 +88,6 @@ def get_authors(root: ET.Element, academic_keywords: List[str]) -> List[str]:
         fore_name = author.find("ForeName")
         affiliation_info = author.findall(".//AffiliationInfo/Affiliation")
         
-        # Log the author information for debugging
         logging.debug(f"Processing author: {fore_name.text if fore_name is not None else 'N/A'} {last_name.text if last_name is not None else 'N/A'}")
 
         # Get the affiliations and check if they are non-academic
@@ -102,7 +101,7 @@ def get_authors(root: ET.Element, academic_keywords: List[str]) -> List[str]:
                         authors.append(author_name)
                     break
         else:
-            # If no affiliation is found, consider it as non-academic (fallback case)
+            # If no affiliation is found, consider it as non-academic
             if last_name is not None and fore_name is not None:
                 author_name = f"{fore_name.text} {last_name.text}"
                 logging.info(f"Adding author: {author_name}")
@@ -177,10 +176,8 @@ def get_corresponding_email(root: ET.Element, academic_keywords: List[str]) -> L
     logging.debug("Extracting corresponding email from the XML data.")
     corresponding_email = None
     
-    # Find authors
     authors_tag = root.findall(".//AuthorList/Author")
     for author in authors_tag:
-        # Extract the affiliation info
         aff_info = author.findall(".//AffiliationInfo/Affiliation")
         for aff in aff_info:
             if aff is not None:
@@ -189,7 +186,7 @@ def get_corresponding_email(root: ET.Element, academic_keywords: List[str]) -> L
                 
                 logging.debug(f"Checking affiliation: {aff.text} for email.")
                 
-                if "@" in email:  # Check if it's a valid email
+                if "@" in email:
                     # Check if the affiliation belongs to a non-academic institution
                     if not is_academic(aff.text, academic_keywords):
                         corresponding_email = email
