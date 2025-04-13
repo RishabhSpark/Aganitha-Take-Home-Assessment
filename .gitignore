@@ -62,6 +62,3 @@ Desktop.ini
 
 # Python wheel files
 *.whl
-
-# Ignoring this folder
-*/ignore_ipynb/*
