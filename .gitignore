@@ -62,3 +62,6 @@ Desktop.ini
 
 # Python wheel files
 *.whl
+
+# Ignoring the testing jupyter notebook
+notebook.ipynb
