@@ -36,7 +36,6 @@ bash
 poetry run get-papers-list --query "cancer immunotherapy" --file results.csv
 ```
 
-<<<<<<< HEAD
 ## Roadmap
 - Basic CLI + PubMed search
 - XML metadata extraction
