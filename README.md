@@ -1,4 +1,4 @@
-# Aganitha-Take-Home-Assessment
+# PubMed Data Extraction
 
 # get-papers-list
 
