@@ -60,4 +60,3 @@ Flag	Description
 | `--file` or `-f`  | Output CSV file path                     |
 | `--debug` or `-d` | Enable debug logging                     |
 | `--help` or `-d`  | Show help message                        |
->>>>>>> dd71474b114e0c5696a6187f82c5dca0dccbf4cf
